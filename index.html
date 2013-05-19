@@ -11,8 +11,28 @@
     ga('create', 'UA-1702281-5', 'malloryandandrew.com');
     ga('send', 'pageview');
   </script>
+  <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
 <body>
   <h1>Mallory & Andrew</h1>
+
+  <div class="container">
+    <div id="slides">
+      <img src="/images/slides/1.jpg">
+      <img src="/images/slides/2.jpg">
+      <img src="/images/slides/3.jpg">
+    </div>
+  </div>
+
+  <script type="text/javascript" src="/javascripts/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="/javascripts/jquery.slides.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("#slides").slidesjs({
+        width: 800,
+        height: 533
+      });
+    });
+  </script>
 </body>
 </html>
